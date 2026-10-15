@@ -1,0 +1,122 @@
+{
+  "dataset": {
+    "nombre": "SMS Spam Collection v1 (UCI)",
+    "fuente": "https://archive.ics.uci.edu/ml/machine-learning-databases/00228/smsspamcollection.zip",
+    "mensajes_totales": 5574,
+    "ham": 4827,
+    "spam": 747
+  },
+  "hiperparametros": {
+    "max_vocab": 10000,
+    "max_len": 160,
+    "embedding_dim": 128,
+    "lstm_units": 128,
+    "dense_units": 64,
+    "dropout": 0.5,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "seed": 42
+  },
+  "divisiones": {
+    "entrenamiento": 3901,
+    "validacion": 836,
+    "prueba": 837,
+    "spam_entrenamiento": 523,
+    "spam_validacion": 112,
+    "spam_prueba": 112
+  },
+  "prueba": {
+    "accuracy": 0.986857825567503,
+    "precision": 0.954954954954955,
+    "recall": 0.9464285714285714,
+    "f1": 0.9506726457399103,
+    "roc_auc": 0.9963793103448276,
+    "informe": "                precision    recall  f1-score   support\n\nLegitimo (ham)       0.99      0.99      0.99       725\n          Spam       0.95      0.95      0.95       112\n\n      accuracy                           0.99       837\n     macro avg       0.97      0.97      0.97       837\n  weighted avg       0.99      0.99      0.99       837\n",
+    "matriz_confusion": [
+      [
+        720,
+        5
+      ],
+      [
+        6,
+        106
+      ]
+    ]
+  },
+  "mejor_epoca": 4,
+  "epocas_entrenadas": 8,
+  "parametros_entrenables": 957953,
+  "minutos_entrenamiento": 1.27,
+  "ejemplos_predicciones": [
+    {
+      "texto": "Ok try to do week end course in coimbatore.",
+      "real": "ham",
+      "predicho": "ham",
+      "probabilidad_spam": 0.021509092301130295,
+      "acierto": true
+    },
+    {
+      "texto": "all the lastest from Stereophonics, Marley, Dizzee Racal, Libertines and The Strokes! Win Nookii games with Flirt!! Click TheMob WAP Bookmark or text WAP to 82468",
+      "real": "spam",
+      "predicho": "spam",
+      "probabilidad_spam": 0.9997889399528503,
+      "acierto": true
+    },
+    {
+      "texto": "You can never do NOTHING",
+      "real": "ham",
+      "predicho": "ham",
+      "probabilidad_spam": 0.0011800279607996345,
+      "acierto": true
+    },
+    {
+      "texto": "FreeMsg>FAV XMAS TONES!Reply REAL",
+      "real": "spam",
+      "predicho": "ham",
+      "probabilidad_spam": 0.04567527025938034,
+      "acierto": false
+    },
+    {
+      "texto": "Ok give me 5 minutes I think I see her. BTW you're my alibi. You were cutting my hair the whole time.",
+      "real": "ham",
+      "predicho": "ham",
+      "probabilidad_spam": 0.00012849883933085948,
+      "acierto": true
+    },
+    {
+      "texto": "I don't think I can get away for a trek that long with family in town, sorry",
+      "real": "ham",
+      "predicho": "ham",
+      "probabilidad_spam": 0.00017857670900411904,
+      "acierto": true
+    },
+    {
+      "texto": "Sad story of a Man - Last week was my b'day. My Wife did'nt wish me. My Parents forgot n so did my Kids . I went to work. Even my Colleagues did not wish. As I entered my cabin my PA said, '' Happy B'day Boss !!''. I felt special. She askd me 4 lunch. After lunch she invited me to her apartment. We went there. She said,'' do u mind if I go into the bedroom for a minute ? '' ''OK'', I sed in a sexy mood. She came out 5 minuts latr wid a cake...n My Wife, My Parents, My Kidz, My Friends n My Colleagues. All screaming.. SURPRISE !! and I was waiting on the sofa.. ... ..... ' NAKED...!",
+      "real": "ham",
+      "predicho": "ham",
+      "probabilidad_spam": 0.0007777816499583423,
+      "acierto": true
+    },
+    {
+      "texto": "Whos this am in class:-)",
+      "real": "ham",
+      "predicho": "ham",
+      "probabilidad_spam": 0.00032371756969951093,
+      "acierto": true
+    },
+    {
+      "texto": "Lovely smell on this bus and it ain't tobacco... ",
+      "real": "ham",
+      "predicho": "ham",
+      "probabilidad_spam": 0.002805033465847373,
+      "acierto": true
+    },
+    {
+      "texto": "That depends. How would you like to be treated? :)",
+      "real": "ham",
+      "predicho": "ham",
+      "probabilidad_spam": 0.0014956496888771653,
+      "acierto": true
+    }
+  ]
+}

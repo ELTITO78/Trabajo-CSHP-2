@@ -1,0 +1,20 @@
+# Datos crudos (se descargan solos)
+data/*
+!data/.gitkeep
+
+# Entorno
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
